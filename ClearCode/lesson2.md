@@ -14,13 +14,13 @@
 **6.2**
 1. bulkOperationDAO // DAO по работе с групповыми операциями
 2. Мне кажется, что вот в этом коде:
-```java
-List<RunData> rdList = Collections.singletonList(runData);
+```java 
+List<RunData> rdList = Collections.singletonList(runData); 
 List<ScenarioExecutionState> scenarioStateList = Collections.singletonList(tCurrent);
 ```
 т.к. обе переменные гарантированно содержат по одному значению (реализовано через List для последующей передачи в методы), имеет смысл указать это в названии переменных явно:
-runDataSingletonList, scenarioStateSingletonList
-3. ```private ActorFactory actorFactory``` // фабрика акторов.
+runDataSingletonList, scenarioStateSingletonList  
+3. ```private ActorFactory actorFactory``` // фабрика акторов.  
 4. ```restletFileUpload``` // рестлет для загрузки пользовательского файла
 
 **6.3**
