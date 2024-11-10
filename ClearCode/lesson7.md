@@ -89,13 +89,13 @@ public class ReportHeader {
 ```
 
 **3.2**
-1. public interface ApacheOapiService - public class ApacheOapiServiceImpl implements ApacheOapiService {
+1. public interface ApacheOapiService - public class ApacheOapiServiceImpl implements ApacheOapiService {  
 // служба доступа к open API
-2. public interface OperationResultsService - public class OperationResultsServiceImpl implements OperationResultsService {
+2. public interface OperationResultsService - public class OperationResultsServiceImpl implements OperationResultsService {  
 // обработка запросов на получение результатов выполнения операции.
-3. public interface AsyncDBLoader - public class AsyncDBLoaderImpl implements AsyncDBLoader<BulkLoadData> {
+3. public interface AsyncDBLoader - public class AsyncDBLoaderImpl implements AsyncDBLoader<BulkLoadData> {  
 // подгрузка дополнительных данных из БД
-4. public interface ScenarioStateService - public class ScenarioStateServiceImpl implements ScenarioStateService {
+4. public interface ScenarioStateService - public class ScenarioStateServiceImpl implements ScenarioStateService {  
 // вспомогательный класс для работы с состояниями сценариев
-5. public interface DictionariesService - public class CachingDictionariesServiceImpl implements DictionariesService {
+5. public interface DictionariesService - public class CachingDictionariesServiceImpl implements DictionariesService {  
 // класс для работы закешированными "статическими" справочниками
