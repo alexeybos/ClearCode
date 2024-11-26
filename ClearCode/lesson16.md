@@ -76,7 +76,7 @@ LOGGER.debug(labelService.msg("SubscriberRatingOptionsDeactivate.execute.start",
 */
     private static String buildBody(RunData runData, Map<String, Object> extraParams) {
 ```
-Проверка давно убрана в отдельный метод и запускается гораздо раньше данного метода. Так что решил вообще убрать этот комментарий, т.к. по названию метода ясна его цель.
+Проверка давно убрана в отдельный метод и запускается гораздо раньше данного метода. Так что решил вообще убрать этот комментарий, т.к. по названию метода ясна его цель.  
 10. (п.п.9, а может 1) Удалил нижепреведенный комментарий, т.к. он не относится ни к выполняемому действию, ни даже, к решаемой в данном куске кода задаче. Просто общая мысль по возможному действию поддержки в дальнейшем...  
 ```java
 //во всех непонятных ситуациях анализ будет по SUBSCRIBER
@@ -103,7 +103,7 @@ return this.runDataMapper.getDuplicated(bulkRequestId, customerModeFlag, fetchCo
 /* OAPI delay in milliseconds */
 private static final long DELAY = 3000;
 ```
-Стало: ```private static final long OAPI_REQUEST_DELAY_MS = 3000;```
+Стало: ```private static final long OAPI_REQUEST_DELAY_MS = 3000;```  
 14. (п.п.11 Закомментированный код) Нашел даже такой интересный вариант (ну и удалил)
 ```java
 if (//instance != null &&
@@ -112,7 +112,7 @@ if (//instance != null &&
     return true;
 }
 ```
-Вообще закомментированного кода достаточно много - удалил гораздо больше, описанного здесь
+Вообще закомментированного кода достаточно много - удалил гораздо больше, описанного здесь  
 15. (п.п.4) Убран очевидный комментарий:  
 // таймаут ожидания ответа.  
 int responseTimeoutMillis = getResponseTimeoutMillis();
